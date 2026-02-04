@@ -14,4 +14,7 @@ class ShoppingCart:
             self.items.remove(product)
             product.quantity += 1
 
+    def get_total(self) -> float:
+        return sum(item.price for item in self.items)
+
 
